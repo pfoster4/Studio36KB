@@ -11,28 +11,28 @@
 
         Delete {
             bindings = <&lt 7 DELETE>;
-            key-positions = <2 1>;
+            key-positions = <3 4>;
             layers = <0>;
         };
 
         AllTabs {
             bindings = <&WinTab>;
-            key-positions = <0 1 2>;
+            key-positions = <11 12 13>;
         };
 
         SwitchWindows {
             bindings = <&kp LA(TAB)>;
-            key-positions = <7 6>;
+            key-positions = <24 23>;
         };
 
         SwitchInternal {
             bindings = <&kp LC(LA(TAB))>;
-            key-positions = <7 5>;
+            key-positions = <24 22>;
         };
 
         Undo {
             bindings = <&kp LC(Z)>;
-            key-positions = <5 6>;
+            key-positions = <20 21>;
         };
 
         Save {
@@ -42,7 +42,32 @@
 
         FileExplorer {
             bindings = <&kp LG(E)>;
-            key-positions = <1 7>;
+            key-positions = <2 14>;
+        };
+
+        capsLock {
+            bindings = <&kp CAPSLOCK>;
+            key-positions = <1 2>;
+        };
+
+        Search {
+            bindings = <&kp LC(E)>;
+            key-positions = <3 2>;
+        };
+
+        Redo {
+            bindings = <&kp LC(Y)>;
+            key-positions = <10 11>;
+        };
+
+        Delete2 {
+            bindings = <&kp DELETE>;
+            key-positions = <5 15>;
+        };
+
+        Windows {
+            bindings = <&kp LEFT_WIN>;
+            key-positions = <25 15>;
         };
     };
 
@@ -493,12 +518,12 @@
         default_layer {
             display-name = "Base";
             bindings = <
-          &kp Q  &kp W  &kp E       &kp R      &kp T  &kp P      &kp O       &kp I          &kp U      &kp Y
-          &kp A  &kp S  &kp D       &kp F      &kp G  &kp SQT    &kp L       &kp K          &kp J      &kp N
-          &kp Z  &kp X  &kp C       &kp V      &kp B  &kp SLASH  &kp PERIOD  &kp COMMA      &kp M      &kp N
-                 &kp E  &kp ESCAPE  &kp ENTER  &mo 1             &kp I       &kp BACKSPACE  &kp SPACE  &mo 2
-                 &kp M  &kp N       &kp O      &kp P             &kp Q       &kp R          &kp S      &kp T
-                 &kp U  &kp V       &kp W      &kp X             &kp Y       &kp Z          &kp A      &kp B
+          &mt TAB Q         &kp W  &kp E       &kp R      &kp T  &kp P      &kp O            &kp I               &kp U             &kp Y
+          &mt LEFT_SHIFT A  &kp S  &kp D       &kp F      &kp G  &kp SQT    &mt RIGHT_ALT L  &mt LEFT_CONTROL K  &mt LEFT_SHIFT J  &kp N
+          &mt LCTRL Z       &kp X  &kp C       &kp V      &kp B  &kp SLASH  &kp PERIOD       &kp COMMA           &kp M             &kp N
+                            &kp E  &kp ESCAPE  &kp ENTER  &mo 1             &kp I            &kp BACKSPACE       &kp SPACE         &mo 2
+                            &kp M  &kp N       &kp O      &kp P             &kp Q            &kp R               &kp S             &kp T
+                            &kp U  &kp V       &kp W      &kp X             &kp Y            &kp Z               &kp A             &kp B
             >;
 
             sensor-bindings = <&inc_dec_kp A B &inc_dec_kp DOWN UP &inc_dec_kp E F &inc_dec_kp LEFT RIGHT>;
