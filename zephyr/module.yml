@@ -1,0 +1,4 @@
+name: zmk-keyboard-studio36kb
+build:
+  settings:
+    board_root: .
