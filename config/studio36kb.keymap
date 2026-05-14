@@ -10,6 +10,11 @@
 #include <dt-bindings/zmk/outputs.h>
 #include <dt-bindings/led/led.h>
 
+&mt {
+    tapping-term-ms = <250>;
+    flavor = "tap-preferred";
+};
+
 // pin control for spi3
 // - MOSI on D19
 &pinctrl {
